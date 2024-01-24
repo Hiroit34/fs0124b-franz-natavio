@@ -1,0 +1,59 @@
+.box-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+
+}
+.insidebox {
+    display: inline-block;
+    color: rgb(1, 65, 33);
+    font-weight: 600;
+
+}
+.big{
+    text-transform: uppercase;
+}
+.ciao {
+    background-color: rgba(255, 230, 0, 0.1);
+    border-top: 2px solid rgb(255, 230,0);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main{
+    max-width: 720px;
+    margin: auto;
+}
+.boxfeatarticole{
+    border-left: 2px solid rgb(255, 230,0);
+}
+.featarticole{
+    color: orange;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom:50px;
+    padding-top: 10px;
+}
+.list {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(14, 255, 175, 0.733)
+}
+.listbottom {
+    padding-bottom: 3px;
+}
+.imagecredit{
+    color: gray;
+    text-align: center;
+}
+* {
+    font-family: 'Lora', serif;
+}
+.immagine{
+    display: block;
+
+}
+.esclusoh{
+    text-align: center;
+}
