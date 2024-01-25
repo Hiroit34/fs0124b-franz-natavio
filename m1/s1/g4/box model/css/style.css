@@ -1,0 +1,52 @@
+.quadrato {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#d2{
+    background-color: red;
+    min-height: 50px;
+    max-width: auto;
+}
+#d3{
+    background-color: blue;
+    max-width: 800px;
+}
+
+#d4{
+    padding: 15px;
+    box-sizing: border-box; /*stringe il contenuto ma mantiene il padding se inserito*/
+}
+#d4{
+    padding: 15px; /* IL PADDING NON ACCETA I NUMERI NEGATIVO 
+    mai usare il padding per allontanare un elemento da un'altro ma solo per staccare il contenuto dal bordo
+    PADDING: 0 15px 0 15px; top=0 right=15 bottom=0 left=15
+    padding: 0 15px; top e bottom = 0 left and right = 15px*/
+    
+    box-sizing: border-box; /*stringe il contenuto ma mantiene il padding se inserito*/
+}
+
+#d5{
+    border: 1px solid #000;
+
+}
+
+#d6{
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* margin serve per porre distanza tra un elemento tra un altro o dal bordo della pagina e non e' possibile colorare il margin ha le stesse proprieta di padding. nellasse x si puo usare auto*/
+
+#d7{
+    margin: 15px;
+}
+
+/* overflow */
+
+#d8{
+    height: 50px;
+    background-color: aqua;
+    overflow: auto;
+}

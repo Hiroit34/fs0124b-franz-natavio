@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epicode - Blog</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="headblock">
+      <header class="insideblock">
+        <div class="logo">
+          <img src="./assets/img/logo.svg" alt="" />
+        </div>
+        <div class="insideblockwrite">
+          <p class="nomeblog">epicode - il blog dei developers</p>
+          <ul class="listanav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">articoli</a></li>
+            <li><a href="#">lavora con noi</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div>
+      <main>
+        <div class="mainblock">
+          <h1 id="maintitle">Come creare un template per i post</h1>
+          <cite id="citazione"
+                  >di mario rossi - pubblicato il 25-10-2020</cite
+                >
+          <section class="firstsection">
+            <div>
+            <p>
+                La prima cosa da fare e' suddividere in blocchi logici la pagina,
+                identificando le <span class="firstspan">parti comuni</span> da applicare a tutte le pagine.
+              </p>
+              <ul>
+                <p>Le varie aree verrano suddivise in:</p>
+                <li>
+                  <p>Contenuti di intestazione del tag &ltheader></p>
+                </li>
+                <li>
+                  <p>
+                    Contenuti centrali variabili del tag &ltmain>(corpo
+                    principale)
+                  </p>
+                </li>
+            </div>
+          </section>
+              </li>              
+                <p>
+                  Contenuti di fine pagina comuni, da inserire nel tag
+                  &ltfooter>
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <h2>Formattazione del codice</h2>
+              <p>
+                Il testo dell-articolo dovra' essere formattato per identificare
+                tutte le fparti da selezionare con i CSS. Percio' i passi
+                saranno:
+              </p>
+              <ol>
+                <p>Progettare su carta il markup finale</p>
+              </ol>
+              <ol>
+                <p>
+                  Scrivere l'HTML dai tag esterno a quelli interni e dall'alto
+                  verso il basso
+                </p>
+              </ol>
+              <ol>
+                <p>Applicare gli stili di CSS</p>
+              </ol>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <aside></aside>
+    </div>
+    <div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
