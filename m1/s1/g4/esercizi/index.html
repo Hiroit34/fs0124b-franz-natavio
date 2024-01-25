@@ -28,16 +28,16 @@
         <div class="insideblockwrite">
           <p class="nomeblog">epicode - il blog dei developers</p>
           <ul class="listanav">
-            <li><a href="#">home</a></li>
-            <li><a href="#">articoli</a></li>
-            <li><a href="#">lavora con noi</a></li>
+            <li><a href="#">&#8658;  home &#8656;</a></li>
+            <li><a href="#">&#8658;  articoli &#8656;</a></li>
+            <li><a href="#">&#8658;  lavora con noi &#8656;</a></li>
           </ul>
         </div>
       </header>
     </div>
     <div>
       <main>
-        <div class="mainblock">
+        <div id="mainblock">
           <h1 id="maintitle">Come creare un template per i post</h1>
           <cite id="citazione"
                   >di mario rossi - pubblicato il 25-10-2020</cite
@@ -48,44 +48,45 @@
                 La prima cosa da fare e' suddividere in blocchi logici la pagina,
                 identificando le <span class="firstspan">parti comuni</span> da applicare a tutte le pagine.
               </p>
-              <ul>
-                <p>Le varie aree verrano suddivise in:</p>
-                <li>
-                  <p>Contenuti di intestazione del tag &ltheader></p>
-                </li>
-                <li>
-                  <p>
-                    Contenuti centrali variabili del tag &ltmain>(corpo
-                    principale)
+          
+                <ul class="firstlist">
+                  <p class="spacelistfirst">Le varie aree verrano suddivise in:</p>
+                  <li>
+                    <p><span class="dot"></span> Contenuti di intestazione del tag &ltheader></p>
+                  </li>
+                  <li>
+                    <p><span class="dot"></span>
+                      Contenuti centrali variabili del tag &ltmain>(corpo
+                      principale)
+                    </p>
+                  </li>
+                </div>
+                </li>              
+                  <p><span class="dot"></span> 
+                    Contenuti di fine pagina comuni, da inserire nel tag
+                    &ltfooter>
                   </p>
                 </li>
-            </div>
+              </ul>
           </section>
-              </li>              
-                <p>
-                  Contenuti di fine pagina comuni, da inserire nel tag
-                  &ltfooter>
-                </p>
-              </li>
-            </ul>
-            <ul>
+            <ul class="secondlist">
               <h2>Formattazione del codice</h2>
               <p>
                 Il testo dell-articolo dovra' essere formattato per identificare
-                tutte le fparti da selezionare con i CSS. Percio' i passi
+                tutte le parti da <span>selezionare con i CSS</span>. Percio' i passi
                 saranno:
               </p>
-              <ol>
-                <p>Progettare su carta il markup finale</p>
+              <ol class="spacelistsecond">
+                <p>1. Progettare su carta il markup finale</p>
               </ol>
               <ol>
                 <p>
-                  Scrivere l'HTML dai tag esterno a quelli interni e dall'alto
+                  2. Scrivere l'HTML dai tag esterno a quelli interni e dall'alto
                   verso il basso
                 </p>
               </ol>
               <ol>
-                <p>Applicare gli stili di CSS</p>
+                <p>3. Applicare gli stili di CSS</p>
               </ol>
             </ul>
           </section>
