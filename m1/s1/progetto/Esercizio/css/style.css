@@ -8,19 +8,17 @@ body {
 header {
     background-color: black;
     text-align: center;
+    padding: 30px
 
 }
 header img {
-    max-width: 50%;
-    max-height: 50%;
+    width: 160px;
+    
 }
 h1{
     font-size: 40px;
     line-height: 1;
     margin: 1px;
-}
-h1 div {
-
 }
 .backgroundfirst p {
     margin: 25px;
@@ -74,6 +72,10 @@ h1 div {
     padding: 30px 26px;
 }
 
+.testimonial {
+    font-style: italic;
+}
+
 #backgroundsecond h2 {
     font-weight: bold;
     font-size: 1.8rem;
@@ -110,12 +112,38 @@ h1 div {
     padding: 0;
 }
 
+.asidep {
+    margin: 25px;
+    padding: 0 35px;
+    margin-bottom: 1;
+}
+
 footer {
     background-color:#25a2c3 ;
     color: white;
+    padding: 0 115px
 }
 
 .cell, .mail, .pixbay {
     color: white;
 }
 
+.contattaci {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+address p:nth-of-type(4) {
+    padding-bottom: 30px;
+}
+
+.copyright {
+    border: 1px solid white;
+    width: 100%;
+    border-left: #25a2c3;
+    border-bottom: #25a2c3;
+    border-right: #25a2c3;
+    padding-top: 30px;
+}
