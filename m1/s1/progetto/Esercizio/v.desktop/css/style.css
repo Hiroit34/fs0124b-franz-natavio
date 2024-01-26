@@ -26,11 +26,9 @@ h1{
     display: inline-block;
 
 }
-
 .backgroundfirst p {
     margin: 25px;
 }
-
 .backgroundfirst {
     background-image: url(../images/banner.jpg);
     background-size: cover;
