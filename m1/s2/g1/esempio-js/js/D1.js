@@ -20,7 +20,7 @@ I boolean sono un datatype che restituisce come valore true o false. Simile ad u
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-const myName = "Franz";
+let myName = "Franz";
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
