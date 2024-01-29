@@ -20,7 +20,7 @@ I boolean sono un datatype che restituisce come valore true o false. Simile ad u
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-//const myName = "Franz";
+const myName = "Franz";
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -44,6 +44,8 @@ const x = 12;
 
 const myName = "Natavio";
 console.log(myName);
+
+/* non e' possibile riassegnare una variabile const poiche const, nonostante sia una variabile, si comporta come un contenitore dati con valore fisso una volta che si e' dichiarato il valore. Percio' non si puo riassegnare una variabile con il costrutto const. */
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
