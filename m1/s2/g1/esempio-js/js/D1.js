@@ -20,7 +20,7 @@ I boolean sono un datatype che restituisce come valore true o false. Simile ad u
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-let myName = "Franz";
+//let myName = "Franz";
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -65,6 +65,4 @@ console.log(risultatoDue);
 let name1 = "john";
 let name2 = "John";
 
-name2 = name2.toLowerCase();
-
-console.log(name1 === name2);
+console.log(name1.toLocaleLowerCase() === name2.toLowerCase());
