@@ -214,7 +214,6 @@ for (i = 0; i < starWarsCharacters.length; i++) {
     starWarsCharacters[i].gender = "robot";
   }
 }
-
 console.log(starWarsCharacters);
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
