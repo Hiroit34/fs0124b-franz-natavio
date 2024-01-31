@@ -114,8 +114,10 @@ if (y > x > z) {
 
 const f = 23;
 
-if (f) {
-  console.log(typeof f);
+if (typeof valore === "number") {
+  console.log("e un numero");
+} else {
+  console.log("non e un numero");
 }
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -125,7 +127,7 @@ const numeroTre = 32895;
 
 if (numeroTre % 2 == 0) {
   console.log(numeroTre + " e' pari");
-} else if (numeroTre % 2 != 0) {
+} else {
   console.log(numeroTre + " e' dispari");
 }
 
