@@ -130,87 +130,111 @@ while (i < numericArray.indexOf(32)) {
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
-const alphabetArr = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
-const newArray = [];
 
-switch (("g", "n", "u", "z", "d")) {
-  case "a":
-    newArray.push(1);
-  case "b":
-    newArray.push(2);
-  case "c":
-    newArray.push(3);
-  case "d":
-    newArray.push(4);
-  case "e":
-  case "f":
-  case "g":
-    newArray.push(7);
-  case "h":
+const newArr = [];
 
-  case "i":
-
-  case "k":
-
-  case "l":
-
-  case "m":
-
-  case "n":
-    newArray.push(13);
-  case "o":
-
-  case "p":
-
-  case "q":
-
-  case "r":
-
-  case "s":
-
-  case "t":
-
-  case "u":
-    newArray.push(20);
-  case "v":
-
-  case "w":
-
-  case "x":
-
-  case "y":
-
-  case "z":
-    newArray.push(25);
-  default:
-    "ciao";
-    break;
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "g":
+      newArr.push(6);
+      break;
+    case "n":
+      newArr.push(13);
+      break;
+    case "u":
+      newArr.push(24);
+      break;
+    case "z":
+      newArr.push(26);
+      break;
+    case "d":
+      newArr.push(4);
+      break;
+  }
 }
-console.log(newArray);
+
+console.log(newArr);
+// const alphabetArr = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "e",
+//   "f",
+//   "g",
+//   "h",
+//   "i",
+//   "j",
+//   "k",
+//   "l",
+//   "m",
+//   "n",
+//   "o",
+//   "p",
+//   "q",
+//   "r",
+//   "s",
+//   "t",
+//   "u",
+//   "v",
+//   "w",
+//   "x",
+//   "y",
+//   "z",
+// ];
+// const newArray = [];
+
+// switch (("g", "n", "u", "z", "d")) {
+//   case "a":
+//     newArray.push(1);
+//   case "b":
+//     newArray.push(2);
+//   case "c":
+//     newArray.push(3);
+//   case "d":
+//     newArray.push(4);
+//   case "e":
+//   case "f":
+//   case "g":
+//     newArray.push(7);
+//   case "h":
+
+//   case "i":
+
+//   case "k":
+
+//   case "l":
+
+//   case "m":
+
+//   case "n":
+//     newArray.push(13);
+//   case "o":
+
+//   case "p":
+
+//   case "q":
+
+//   case "r":
+
+//   case "s":
+
+//   case "t":
+
+//   case "u":
+//     newArray.push(20);
+//   case "v":
+
+//   case "w":
+
+//   case "x":
+
+//   case "y":
+
+//   case "z":
+//     newArray.push(25);
+//   default:
+//     "ciao";
+//     break;
+// }
+// console.log(newArray);
