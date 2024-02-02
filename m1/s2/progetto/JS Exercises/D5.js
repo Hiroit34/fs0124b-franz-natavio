@@ -170,45 +170,43 @@ switch (("g", "n", "u", "z", "d")) {
   case "d":
     newArray.push(4);
   case "e":
-    newArray.push(5);
   case "f":
-    newArray.push(6);
   case "g":
     newArray.push(7);
   case "h":
-    newArray.push(8);
+
   case "i":
-    newArray.push(9);
+
   case "k":
-    newArray.push(10);
+
   case "l":
-    newArray.push(11);
+
   case "m":
-    newArray.push(12);
+
   case "n":
     newArray.push(13);
   case "o":
-    newArray.push(14);
+
   case "p":
-    newArray.push(15);
+
   case "q":
-    newArray.push(16);
+
   case "r":
-    newArray.push(17);
+
   case "s":
-    newArray.push(18);
+
   case "t":
-    newArray.push(19);
+
   case "u":
     newArray.push(20);
   case "v":
-    newArray.push(21);
+
   case "w":
-    newArray.push(22);
+
   case "x":
-    newArray.push(23);
+
   case "y":
-    newArray.push(24);
+
   case "z":
     newArray.push(25);
   default:
