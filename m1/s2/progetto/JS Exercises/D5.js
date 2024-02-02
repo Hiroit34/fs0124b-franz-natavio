@@ -160,88 +160,62 @@ const alphabetArr = [
 ];
 const newArray = [];
 
-for (let i = 0; i < alphabetArr.length; i++) {
-  switch (i + 1) {
-    case 1:
-      newArray.push(1);
-      break;
-    case 2:
-      newArray.push(2);
-      break;
-    case 3:
-      newArray.push(3);
-      break;
-    case 4:
-      newArray.push(4);
-      break;
-    case 5:
-      newArray.push(5);
-      break;
-    case 6:
-      newArray.push(6);
-      break;
-    case 7:
-      newArray.push(7);
-      break;
-    case 8:
-      newArray.push("h");
-      break;
-    case 9:
-      newArray.push("i");
-      break;
-    case 10:
-      newArray.push("j");
-      break;
-    case 11:
-      newArray.push("k");
-      break;
-    case 12:
-      newArray.push("l");
-      break;
-    case 13:
-      newArray.push("m");
-      break;
-    case 14:
-      newArray.push("n");
-      break;
-    case 15:
-      newArray.push("o");
-      break;
-    case 16:
-      newArray.push("p");
-      break;
-    case 17:
-      newArray.push("q");
-      break;
-    case 18:
-      newArray.push("r");
-      break;
-    case 19:
-      newArray.push("s");
-      break;
-    case 20:
-      newArray.push("t");
-      break;
-    case 21:
-      newArray.push("u");
-      break;
-    case 22:
-      newArray.push("v");
-      break;
-    case 23:
-      newArray.push("w");
-      break;
-    case 24:
-      newArray.push("x");
-      break;
-    case 25:
-      newArray.push("y");
-      break;
-    case 26:
-      newArray.push("z");
-      break;
-    default:
-      break;
-  }
+switch (("g", "n", "u", "z", "d")) {
+  case "a":
+    newArray.push(1);
+  case "b":
+    newArray.push(2);
+  case "c":
+    newArray.push(3);
+  case "d":
+    newArray.push(4);
+  case "e":
+    newArray.push(5);
+  case "f":
+    newArray.push(6);
+  case "g":
+    newArray.push(7);
+  case "h":
+    newArray.push(8);
+  case "i":
+    newArray.push(9);
+  case "k":
+    newArray.push(10);
+  case "l":
+    newArray.push(11);
+  case "m":
+    newArray.push(12);
+  case "n":
+    newArray.push(13);
+  case "o":
+    newArray.push(14);
+  case "p":
+    newArray.push(15);
+  case "q":
+    newArray.push(16);
+  case "r":
+    newArray.push(17);
+  case "s":
+    newArray.push(18);
+  case "t":
+    newArray.push(19);
+  case "u":
+    newArray.push(20);
+  case "v":
+    newArray.push(21);
+  case "w":
+    newArray.push(22);
+  case "x":
+    newArray.push(23);
+  case "y":
+    newArray.push(24);
+  case "z":
+    newArray.push(25);
+  case 25:
+    newArray.push(26);
+  case 26:
+    newArray.push(27);
+  default:
+    break;
 }
 console.log(newArray);
