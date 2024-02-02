@@ -125,12 +125,119 @@ while (i < numericArray.indexOf(32)) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const array = ["f", "b", "e"];
+const charactersArray = ["g", "n", "u", "z", "d"];
+const alphabetArr = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
 const newArray = [];
 
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < alphabetArr.length; i++) {
   switch (i + 1) {
     case 1:
-      newArray.push("a");
+      newArray.push(1);
+      break;
+    case 2:
+      newArray.push(2);
+      break;
+    case 3:
+      newArray.push(3);
+      break;
+    case 4:
+      newArray.push(4);
+      break;
+    case 5:
+      newArray.push(5);
+      break;
+    case 6:
+      newArray.push(6);
+      break;
+    case 7:
+      newArray.push(7);
+      break;
+    case 8:
+      newArray.push("h");
+      break;
+    case 9:
+      newArray.push("i");
+      break;
+    case 10:
+      newArray.push("j");
+      break;
+    case 11:
+      newArray.push("k");
+      break;
+    case 12:
+      newArray.push("l");
+      break;
+    case 13:
+      newArray.push("m");
+      break;
+    case 14:
+      newArray.push("n");
+      break;
+    case 15:
+      newArray.push("o");
+      break;
+    case 16:
+      newArray.push("p");
+      break;
+    case 17:
+      newArray.push("q");
+      break;
+    case 18:
+      newArray.push("r");
+      break;
+    case 19:
+      newArray.push("s");
+      break;
+    case 20:
+      newArray.push("t");
+      break;
+    case 21:
+      newArray.push("u");
+      break;
+    case 22:
+      newArray.push("v");
+      break;
+    case 23:
+      newArray.push("w");
+      break;
+    case 24:
+      newArray.push("x");
+      break;
+    case 25:
+      newArray.push("y");
+      break;
+    case 26:
+      newArray.push("z");
+      break;
+    default:
+      break;
   }
 }
+console.log(newArray);
