@@ -211,11 +211,8 @@ switch (("g", "n", "u", "z", "d")) {
     newArray.push(24);
   case "z":
     newArray.push(25);
-  case 25:
-    newArray.push(26);
-  case 26:
-    newArray.push(27);
   default:
+    "ciao";
     break;
 }
 console.log(newArray);
