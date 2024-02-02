@@ -6,15 +6,16 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
-function checkArray(n) {
-  listaNumeriCausali = [];
-
-  const giveMeRandom = Math.floor(math.random() * 11);
-  if (giveMeRandom > 5) {
-    return console.log();
+function giveMeRandom(n) {
+  const listNumeriRandomici = [];
+  for (let i = 0; i < n; i++) {
+    const generatoreDiNumeri = Math.floor(Math.random() * 11);
+    listNumeriRandomici.push(generatoreDiNumeri);
   }
-}
 
+  function name(params) {
+    
+  }
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).

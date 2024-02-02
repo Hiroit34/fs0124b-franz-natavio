@@ -29,6 +29,8 @@ console.log(crazySum(5, 5));
 function crazyDiff(a) {
   if (a > 19) {
     return Math.abs(a - 19) * 3;
+  } else {
+    return Math.abs(a - 19);
   }
 }
 let a = 21;
@@ -87,14 +89,25 @@ console.log(reverseString("EPICODE"));
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-// function upperFirst(str) {
-//   const arrWord = str.split(" ");
-//   const firstLetterUp = arrWord.map(function(i) {
-//     i.upperFirst
-//   }
-// }
+/**
+ * 
+ * @param {string} str 
+ * @returns 
+ */
+function upperFirst(str) {
+  const words = str.split(" ");
 
-// console.log(upperFirst("ciao questo test non mi piace"));
+  const capitalizedWords = words.map(function (word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  const resultString = capitalizedWords.join(" ");
+
+  return resultString;
+}
+
+console.log(upperFirst("questo test non mi piace per niente"));
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
@@ -109,12 +122,6 @@ console.log(cutString("Camilla"));
 */
 
 function giveMeRandom(n) {
-  const listNumeriRandomici = [];
-  for (let i = 0; i < n; i++) {
-    const generatoreDiNumeri = Math.floor(Math.random() * 11);
-    listNumeriRandomici.push(generatoreDiNumeri);
-  }
-
-  return listNumeriRandomici;
+  return Array.from(Array(n), () => Math.floor(Math.random() * 11))
 }
 console.log(giveMeRandom(10));
