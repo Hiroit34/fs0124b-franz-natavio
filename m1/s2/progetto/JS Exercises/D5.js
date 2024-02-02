@@ -81,7 +81,7 @@ const ferrari = {
   brand: "Ferrari",
   model: "812",
   color: "red",
-  trims: "Superfast",
+  trims: ["Superfast", "Novitec"],
 };
 cars.push(ferrari);
 console.log(cars);
@@ -90,9 +90,13 @@ console.log(cars);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
+
 const justTrims = [];
-const trimsDeleted = cars["trims"];
-justTrims.push(trimsDeleted);
+
+for (let i = 0; i < cars.length; i++) {
+  const trimsDeleted = cars[i]["trims"].slice(0, 1);
+  justTrims.push(trimsDeleted);
+}
 
 console.log(justTrims);
 /* ESERCIZIO 8
