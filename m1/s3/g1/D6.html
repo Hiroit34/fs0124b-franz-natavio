@@ -177,9 +177,11 @@
         */
 
       const makeItClickable = function () {
-        const cliccabile = document.querySelector("div h1");
+        const cliccabile = document.querySelector("h1");
         console.log(cliccabile);
-        cliccabile.addEventListener("click", function () {});
+        cliccabile.addEventListener("click", function () {
+          cliccabile.innerText = cliccabile.innerText.slice(0, -1);
+        });
       };
       makeItClickable();
       /* ESERCIZIO 10
