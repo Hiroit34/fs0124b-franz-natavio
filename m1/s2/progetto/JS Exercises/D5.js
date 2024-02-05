@@ -94,7 +94,7 @@ console.log(cars);
 const justTrims = [];
 
 for (let i = 0; i < cars.length; i++) {
-  const trimsDeleted = cars[i]["trims"].slice(0, 1);
+  const trimsDeleted = cars[i]["trims"][0];
   justTrims.push(trimsDeleted);
 }
 
