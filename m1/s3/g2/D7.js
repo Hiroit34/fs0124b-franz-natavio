@@ -87,9 +87,9 @@ const arrayStringa = ["aisjcnasasdasdasdasjk", "askjcnalkjsnc"];
 
 function stringa() {
   const nuovoArray = arrayStringa.map((stringa) => stringa.length);
-  console.log(nuovoArray);
+  return nuovoArray;
 }
-stringa();
+console.log(stringa());
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
@@ -113,10 +113,10 @@ function tuttiNUmeriDispari() {
       arrayDiNumeriDispari.push(generatoreDiNumeri3);
     }
   }
-  console.log(arrayDiNumeriDispari);
+  return arrayDiNumeriDispari;
 }
 
-tuttiNUmeriDispari();
+console.log(tuttiNUmeriDispari());
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -252,9 +252,9 @@ const movies = [
 
 function numeroDiFilm() {
   const lunghezza = movies.length;
-  console.log(lunghezza);
+  return lunghezza;
 }
-numeroDiFilm();
+console.log(numeroDiFilm());
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
@@ -262,9 +262,9 @@ numeroDiFilm();
 function titoliFilm() {
   const soloTitoli = [];
   movies.map((film) => soloTitoli.push(film.Title));
-  console.log(soloTitoli);
+  return soloTitoli;
 }
-titoliFilm();
+console.log(titoliFilm());
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
@@ -272,17 +272,18 @@ function filmDelSecolo() {
   const filmUscitiInQuestoSecolo = [];
   const pippo = movies.filter((anno) => anno.Year < 3000 && anno.Year > 2000);
   filmUscitiInQuestoSecolo.push(pippo);
-  console.log(filmUscitiInQuestoSecolo);
+  return filmUscitiInQuestoSecolo;
 }
-filmDelSecolo();
+console.log(filmDelSecolo());
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
-// function sommaAnniFilm() {
-//   movies.reduce((temp, curr) => temp + curr, temp.Year);
-// }
-// sommaAnniFilm();
+function calcolatoreAnniFilm() {
+  movie;
+}
+console.log(calcolatoreAnniFilm());
+
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
@@ -298,4 +299,4 @@ function trovaFilmTramiteImbd(n) {
   const spect = movies.findIndex((film) => film.Year === n);
   console.log(spect);
 }
-trovaFilmTramiteImbd("1978");
+trovaFilmTramiteImbd("2005");
