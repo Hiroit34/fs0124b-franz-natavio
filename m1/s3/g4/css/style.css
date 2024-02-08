@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.contenitoreNumeri {
+    display: flex;
+    background-color: bisque;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.number {
+    flex: 0 1 calc(100% / 11);
+    margin: 25px 0;
+    
+    
+}
+
+.scelto {
+    background-color: red;
+}
