@@ -463,7 +463,7 @@ function aggiungiElementoLiUl() {
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 function eliminaListaDentroUl() {
-  const lista = document.querySelectorAll("myList");
+  const lista = document.querySelector("myList");
   return lista.remove();
 }
 /* ESERCIZIO 26
