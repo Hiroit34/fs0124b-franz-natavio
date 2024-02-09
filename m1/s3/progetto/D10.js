@@ -65,10 +65,10 @@ function whoIsBigger(a, b) {
   if (a > b) {
     return `${a} is bigger than ${b}`;
   } else {
-    return `${b} is bigger than ${a}`;
+    return `${a} is smaller than ${b}`;
   }
 }
-console.log(whoIsBigger(10, 9));
+console.log(whoIsBigger(1, 9));
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
@@ -94,7 +94,7 @@ function deleteOne(stringa, booleano) {
   }
 }
 
-console.log(deleteOne("telefono", true));
+console.log(deleteOne("ultima", false));
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
@@ -372,19 +372,18 @@ console.log(onlyInLastMillennium());
 function sumAllTheYears() {
   const anniNumero = movies.map((movie) => parseInt(movie.Year));
   return anniNumero.reduce((acc, anniFilm) => acc + anniFilm, 0);
-  //   return
 }
 console.log(sumAllTheYears());
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 function searchByTitle(stringa) {
-  const titoloCercato = movies.filter((movie) =>
-    movie.Title.toLowerCase().includes(stringa.toLowerCase())
+  const titoloCercato = movies.filter((film) =>
+    film.Title.toLowerCase().includes(stringa.toLowerCase())
   );
   return titoloCercato;
 }
-console.log(searchByTitle("vespa"));
+console.log(searchByTitle("tarzan"));
 /* ESERCIZIO 18
 Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
 "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
@@ -406,7 +405,7 @@ function searchAndDivide(stringa) {
 
   return divisione;
 }
-console.log(searchAndDivide("avangers"));
+console.log(searchAndDivide("avenger"));
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.

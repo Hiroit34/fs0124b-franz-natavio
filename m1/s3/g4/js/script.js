@@ -4,7 +4,6 @@ for (let index = 1; index <= 77; index++) {
   tabella.innerText = index;
   tabella.classList.add("number");
   contenitoreNumeri.append(tabella);
-  console.log(tabella);
 }
 
 const bottoneNumero = document.querySelector(".scegliNumeroBtn");
