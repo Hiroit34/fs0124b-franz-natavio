@@ -4,18 +4,27 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  .tabella {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+  }
 
 .contenitoreNumeri {
     display: flex;
     background-color: bisque;
     flex-wrap: wrap;
     text-align: center;
+    margin: 2rem;
+    border: 1px solid red;
 }
 
 .number {
     flex: 0 1 calc(100% / 11);
     margin: 25px 0;
-    
+    padding: 0 25px;
+    border: 1px solid black;
+    border-collapse: collapse ;
     
 }
 
