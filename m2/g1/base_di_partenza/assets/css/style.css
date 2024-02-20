@@ -331,7 +331,7 @@ footer a {
         padding: 20px 10px;
     }
     main {
-        padding: 0 3rem;
+        padding: 3.5rem 3rem;
     }
     .container-video-novita {
         display: flex;
@@ -359,11 +359,17 @@ footer a {
     }
 }
 
-@media print and (min-width: 1200px) {
+@media print {
     header {
         display: none;
     }
     footer {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    .container-video-novita {
         display: none;
     }
 }
