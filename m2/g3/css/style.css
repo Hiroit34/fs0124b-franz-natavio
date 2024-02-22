@@ -63,6 +63,11 @@ h1 {
     color: #732204;
 }
 
+.main__product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product {
     margin: 1rem;
     border-radius: 10rem;
