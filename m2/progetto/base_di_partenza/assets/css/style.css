@@ -6,20 +6,16 @@
     justify-content: center;
 } */
 
-.nav-white {
-    background-color: #F2F2F2;
-}
 
-
-
-nav {
+.nav {
     border-bottom: 1px solid black;
     background-color: #ffc017;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
     width: 100%;
     overflow: hidden;
+    transition: background-color 0.5s
 }
 .nav-white {
     background-color: #F2F2F2;
@@ -41,13 +37,14 @@ nav > img {
     background-color: black;
     color: white;
     border-radius: 99em;
+    transition: background-color 0.5s
 }
 
-.get.get-green {
+.get-green {
     border: none;
     padding: 8px 16px;
-    background-color: black;
-    color: #1a8917;
+    background-color: #1a8917;
+    color: white;
     border-radius: 99em;
 }
 
@@ -74,7 +71,6 @@ nav > img {
     background-color: #ffc017;
     gap: 30px;
     border-bottom: 1px solid black;
-    margin-top: 5rem;
     height: 100%;
 }
 
