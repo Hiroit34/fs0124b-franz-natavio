@@ -29,22 +29,21 @@
     transform: rotate(355deg);
     background: #fefecd;
     background: linear-gradient(0deg, rgba(128,128,113,1) 0%, rgba(254,254,205,1) 100%);
-    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38)
+    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38);
 }
 
 .task2 {
     transform: rotate(7deg);
     background-color: #cbfdcd;
     background: linear-gradient(0deg, rgba(158,181,161,1) 18%, rgba(203,253,205,1) 100%);
-    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38)
-    
+    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38);
 }
 
 .task3 {
     transform: rotate(356deg);
     background: rgb(98,99,111);
     background: linear-gradient(0deg, rgba(98,99,111,1) 17%, rgba(201,201,247,1) 100%);
-    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38)
+    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.38);
 }
 
 .task1:hover {
@@ -67,6 +66,6 @@
 }
 
 @keyframes slide {
-    from {transform: scale(0,100);
+    from {transform: translateZ(1000px)
     }
 }
