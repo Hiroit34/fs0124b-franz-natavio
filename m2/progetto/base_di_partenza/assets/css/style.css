@@ -18,7 +18,7 @@
     transition: background-color 0.5s
 }
 .nav-white {
-    background-color: #F2F2F2;
+    background-color: white;
 }
 nav > img {
     height: 100%;
@@ -41,12 +41,9 @@ nav > img {
 }
 
 .get-green {
-    border: none;
-    padding: 8px 16px;
     background-color: #1a8917;
-    color: white;
-    border-radius: 99em;
 }
+
 
 .item_nav {
     display: flex;
@@ -83,12 +80,15 @@ nav > img {
 
 .insideBelowNavBar h2{
     font-size: 106px;
+    font-weight: 500;
 }
 .insideBelowNavBar h3{
     font-size: 24px;
+    font-family: 'robot', sans-serif;
 }
 
 .startReading-btn {
+    margin: 1.5rem 0;
     background-color: black;
     color: white;
     font-size: 20px;
@@ -105,6 +105,8 @@ nav > img {
     justify-content: center;
     font-family: 'roboto', sans-serif;
     padding: 3rem 0;
+    max-width: 1192px;
+    margin: auto;
 }
 
 .container-trending {
@@ -113,11 +115,8 @@ nav > img {
     justify-content: center;
 }
 .contenitoreMain {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    gap: 1.5rem;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .contenitoreTrendingArt {
@@ -131,6 +130,7 @@ nav > img {
     font-weight: 500;
     letter-spacing: -.014em;
     color: #F2F2F2;
+    font-family: 'roboto', sans-serif;
 }
 
 .contenitoreImmgineH2 {
@@ -143,6 +143,7 @@ nav > img {
 .contenitoreImmgineH2 h2{
     display: flex;
     align-items: center;
+
 }
 
 .contenitoreImmgineH2 img {
@@ -158,6 +159,42 @@ nav > img {
     font-size: 16px;
 }
 
+.star {
+    display: flex;
+    gap: 3px;
+}
+
+
+
+.star img{
+    width: 15px;
+    height: 15px;
+}
+
+.star2 {
+    display: flex;
+    font-size: 14px;
+    padding-top: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inside-star2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.premium {
+    width: 15px;
+    height: 15px;
+}
+
+.star2 img:nth-of-type(2){
+    width: 25px;
+    height: 25px;
+}
+
 .contenitoreSpan {
     font-size: 13px;
     line-height: 20px;
@@ -166,8 +203,7 @@ nav > img {
 .trandingOnMedium {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 16px;
+    justify-content: flex-start; 
     font-weight: 500;
     font-size: 15px;
 }
@@ -176,7 +212,6 @@ nav > img {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    max-width: 209.59px;
     flex-wrap: wrap;
 }
 
@@ -230,6 +265,12 @@ nav > img {
     margin: 0 auto;
     padding: 2rem 0;
     font-family: 'roboto', sans-serif;
+    gap: 50px;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
 }
 
 .container-aside-art h2 {
@@ -245,6 +286,10 @@ nav > img {
     padding-left: 3rem;
     /* position: sticky;
     top: -130px; */
+}
+
+.flex1 {
+    flex:1
 }
 
 .container-aside {
