@@ -82,6 +82,7 @@ nav>img {
     flex-direction: column;
     margin: auto;
     row-gap: 1.5rem;
+    flex-shrink: 0;
 }
 
 .insideBelowNavBar h2 {
@@ -103,6 +104,11 @@ nav>img {
     border-radius: 99em;
     border: none;
     padding: 8px 20px;
+}
+
+.img {
+    flex-shrink: 1;
+    position: relative;
 }
 
 .mainContainer {
@@ -130,7 +136,7 @@ nav>img {
 .contenitoreTrendingArt {
     display: flex;
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .contenitoreTrendingArt>span {
@@ -146,13 +152,20 @@ nav>img {
     height: 23px;
     gap: 0.5rem;
     font-size: 13px;
+}
 
+.heading-author {
+    display: flex;
+    gap: 2px;
+}
+
+.author {
+    font-weight: 500;
 }
 
 .contenitoreImmgineH2 h2 {
     display: flex;
     align-items: center;
-
 }
 
 .contenitoreImmgineH2 img {
@@ -439,7 +452,6 @@ nav>img {
     margin: -0.1rem 0px;
     padding-top: 4.4rem;
     padding-bottom: 2.2rem;
-    z-index: 1;
 }
 
 .container-aside h2 {
@@ -463,6 +475,11 @@ nav>img {
     font-size: 14px;
 }
 
+.cloudtag a {
+    margin: 0.3rem;
+    display: inline-block;
+}
+
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -478,4 +495,67 @@ nav>img {
     font-family: 'robot', sans-serif;
     color: #6B6B6B;
     background-color: transparent
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-aside {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 45px;
+        gap: 7px;
+        margin: -0.1rem 0px;
+        padding-top: 4.4rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .insideBelowNavBar h2 {
+        font-size: 86px;
+        font-weight: 500;
+    }
+
+    .mainContainer {
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'roboto', sans-serif;
+        padding: 3rem 0;
+        max-width: 1192px;
+        margin-inline: 2rem;
+    }
+
+    .contenitoreMain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-aside-section {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1192px;
+        margin: 0 auto;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .container-art {
+        margin-inline: 2rem;
+    }
+
+    .cloudtag {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cloud-tag a {
+        display: block;
+    }
+
 }
