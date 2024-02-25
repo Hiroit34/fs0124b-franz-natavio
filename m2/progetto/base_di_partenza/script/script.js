@@ -1,6 +1,5 @@
 const nav = document.querySelector(".nav");
 const get = document.querySelector(".get");
-
 window.onscroll = function () {
   // pageYOffset or scrollY
   if (window.scrollY > 399) {
