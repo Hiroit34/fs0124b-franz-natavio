@@ -1,0 +1,15 @@
+.card {
+    min-width: 25%;
+}
+
+.container {
+    width: 80%;
+}
+
+.logo {
+    max-height: 38px;
+}
+
+body {
+    overflow: hidden;
+}
