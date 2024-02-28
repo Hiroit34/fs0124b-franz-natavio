@@ -1,5 +1,5 @@
 .card {
-    min-width: 25%;
+    max-width: 18;
 }
 
 .container {
@@ -10,6 +10,10 @@
     max-height: 38px;
 }
 
-body {
-    overflow: hidden;
+.col.btn.btn-info {
+    max-width: 200px;
+}
+
+.col.p-0 {
+    max-width: 18rem;
 }
