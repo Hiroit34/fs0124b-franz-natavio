@@ -1,6 +1,20 @@
 
 
-
 button {
     padding: 1rem;
+    margin: 0.5rem;
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+.learn-more {
+    background-color: nth($bottoni,1);
+}
+
+.login {
+    background-color: nth($bottoni,2);
+}
+
+.contact-us {
+    background-color: nth($bottoni,3);
 }
