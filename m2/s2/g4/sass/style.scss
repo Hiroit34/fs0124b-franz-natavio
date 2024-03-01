@@ -44,3 +44,7 @@ h1 {
     background-color: #ffeeda;
     @include coloreDinamico(#ffeeda);
 }
+
+.card {
+    max-width: 288px;
+}

@@ -1,0 +1,97 @@
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+nav {
+    img {
+        max-width: 100px;
+    }
+}
+
+header {
+    img {
+        max-width: 100px;
+    }
+}
+
+.bi.bi-search, .kids, .bi.bi-bell-fill {
+    color: white;
+}
+
+h1 {
+    width: fit-content;
+}
+
+
+
+.btn {
+    border-radius: 0;
+}
+
+.bi.bi-text-left, .bi.bi-grid {
+    color: rgb(245, 234, 234)
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.card {
+    width: 250px;
+    background: $dark;
+    border-radius: 3px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+}
+
+.container.text-white.pt-5 {
+    font-size: 13px;
+}
+
+
+#copyright {
+    font-size: 12px;
+}
+
+#profile {
+    max-width: 576px;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#image {
+    width: 125px;
+}
+
+#flexCheckDefault {
+    border-radius: 0;
+    background-color: $dark;
+    width: 30px;
+    height: 30px;
+    border: var(--bs-border-width) solid rgba(255, 255, 255, 0.5) ;
+}
+
+.form-check-input:checked {
+
+    border-color: rgba(255, 255, 255, 0.5)
+}
