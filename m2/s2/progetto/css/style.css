@@ -11862,6 +11862,8 @@ h1, .h1 {
 
 .btn {
   border-radius: 0;
+  background-color: #f1f1f1;
+  border: 1px solid grey;
 }
 
 .bi.bi-text-left, .bi.bi-grid {
@@ -11928,6 +11930,10 @@ h1, .h1 {
 
 .form-check-input:checked {
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+.container.settings {
+  max-width: 900px;
 }
 
 /*# sourceMappingURL=style.css.map */
