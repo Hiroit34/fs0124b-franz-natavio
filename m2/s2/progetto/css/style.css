@@ -11939,7 +11939,7 @@ h1, .h1 {
 }
 
 .container.settings {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .container.text-white.pt-2 {
@@ -11959,6 +11959,10 @@ h1, .h1 {
 .btn.px-5 {
   border-bottom: 1px solid rgb(173, 173, 173);
   background-color: #e1e1e1;
+}
+
+.image-setting {
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
