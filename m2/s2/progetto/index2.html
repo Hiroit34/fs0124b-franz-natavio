@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Third navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./Netflix-assets/assets/netflix_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 d-md-flex align-items-start align-items-end">
+                    <li class="nav-item">
+                        <a class="nav-link active pe-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Show</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">My List</a>
+                    </li>
+                </ul>
+                <div class="dropdown text-end d-flex justify-content-end">
+                    <div class="d-flex gap-2 align-items-center me-3 mb-3 mb-sm-0 justify-content-end">
+                        <div><i class="bi bi-search h4"></i></div>
+                        <div class="kids">KIDS</div>
+                        <div><i class="bi bi-bell-fill h4"></i></div>
+                    </div>
+                    <a href="#"
+                        class="d-flex justify-content-end link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./Netflix-assets/assets/avatar.png" alt="mdo" width="32" height="32" class="">
+                    </a>
+                    <ul class="dropdown-menu text-small dropdown-menu-end bg-dark">
+                        <li><a class="dropdown-item text-white" href="#">New project...</a></li>
+                        <li><a class="dropdown-item text-white" href="./settings.html">Settings</a></li>
+                        <li><a class="dropdown-item text-white" href="./profile.html">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-white">
+                        </li>
+                        <li><a class="dropdown-item text-white" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-white">
+        <div class="row justify-content-space-between align-items-center">
+            <div class="col">
+                <div class="row align-items-center justify-content-space-between">
+                    <div class="col-auto">
+                        <h1>TV Shows</h1>
+                    </div>
+                    <div class="col">
+                        <div class="btn-group">
+                            <button type="button" class="btn border border-white text-white dropdown-toggle bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Genres
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Anime</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Thriller</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-white">
+                                </li>
+                                <li><a class="dropdown-item text-white" href="#">See More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn bg-dark border border-white">
+                        <i class="bi bi-text-left"></i>
+                    </button>
+                    <button type="button" class="btn bg-dark border border-white">
+                        <i class="bi bi-grid"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-white">
+            <div class="col">
+                <h4 class="mt-4">Trending Now</h4>
+            </div>
+            <section class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media0.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media2.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media3.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media4.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media5.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media6.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media7.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media8.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media9.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="row text-white mt-4">
+            <div class="col">
+                <h4>Whatch It Again</h4>
+            </div>
+            <section class="splide" id="slider1">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media10.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media11.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media12.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media13.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media14.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media15.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media16.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media17.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media19.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media20.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="row text-white mt-4">
+            <div class="col">
+                <h4>New Releases</h4>
+            </div>
+            <section class="splide" id="slider2">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media21.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media22.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media23.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media24.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media25.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media26.webp" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media27.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media28.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media29.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img-box">
+                                <img src="./Netflix-assets/assets/media/media30.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="container text-white pt-2">
+        <div class="row pt-3 mt-5">
+            <div class="col-12">
+                <div class="d-flex gap-3 icons" id="icons-footer">
+                    <i class=" bi bi-facebook h3"></i>
+                    <i class=" bi bi-instagram h3"></i>
+                    <i class=" bi bi-twitter h3"></i>
+                    <i class=" bi bi-youtube h3"></i>
+                </div>
+            </div>
+        </div>
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pb-2 mt-3 justify-content-center g-0">
+            <div class="col mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Audio and Subtitles</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Media Center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Audio Description</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Investor Relations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Legal Notices</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Help Center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Jobs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cookie Preferences</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Gift Card</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Terms of Use</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Corporate Information</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="row justify-content-start">
+            <div class="col-12">
+                <button type="button" class="btn border border-1 border-white mt-2">Service Code</button>
+                <p id="copyright" class="mt-4">&copy; 1997-2019 Neflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+            </div>
+        </div>
+
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
