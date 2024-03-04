@@ -73,7 +73,7 @@ new Splide("#slider2", {
     480: {
       perPage: 1,
       gap: ".7rem",
-      height: "10rem",
+      height: "8rem",
     },
   },
 }).mount();
