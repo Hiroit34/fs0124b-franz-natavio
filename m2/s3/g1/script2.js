@@ -5,6 +5,7 @@ let breedField = document.getElementById("breed-field");
 let petList = document.getElementById("petList");
 let addButton = document.getElementById("add");
 let pets = [];
+console.log(pets);
 
 class Pet {
   constructor(_petName, _ownerName, _species, _breed) {
@@ -48,11 +49,9 @@ addButton.addEventListener("click", function () {
 
 const list = function () {
   petList.innerHTML = "";
-  pets.forEach((pet) => {
+  pets.forEach((el) => {
     const newLi = document.createElement("li");
-    newLi.innerText = `Name: ${pet.petName} Owner: ${pet.ownerName} Breed: ${pet.breed} `;
+    newLi.innerText = `Name: ${el.petName} Owner: ${el.ownerName} Breed: ${el.breed} `;
     petList.appendChild(newLi);
   });
 };
-
-console.log(newLi[0].sameOwner(newLi[1]));
