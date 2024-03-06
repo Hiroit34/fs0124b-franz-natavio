@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "name": "g3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass sass/style.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -16,7 +16,7 @@ deleteBtn.addEventListener("click", () => {
   title.innerHTML = "";
 });
 
-var timer = sessionStorage.getItem("timer_station");
+let timer = sessionStorage.getItem("timer_station");
 if (!timer) {
   timer = 20;
 }
