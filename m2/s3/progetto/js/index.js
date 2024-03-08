@@ -22,7 +22,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
       brand.innerText = product.brand;
       price.innerText = product.price;
       description.innerText = product.description;
-      immagine.innerText = product.imgUrl;
+      immagine.src = product.imageUrl;
       editBtn.href = `edit.html?id=${product._id}`;
 
       document.querySelector(".row").append(card);

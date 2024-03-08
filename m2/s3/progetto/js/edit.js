@@ -62,3 +62,22 @@ send.addEventListener("click", function (e) {
       location.href = "index.html";
     });
 });
+
+let deleteBtn = document.querySelector(".btn-danger");
+console.log(deleteBtn);
+deleteBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
+    method: "DELETE",
+    headers: {
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((dati) => {
+      location.href = "index.html";
+      console.log("prodotto eliminato");
+    });
+});
