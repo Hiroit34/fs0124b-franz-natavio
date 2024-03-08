@@ -12,7 +12,13 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
       "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
   },
 })
-  .then((res) => res.json())
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Attenzione! C'è un'errore");
+    }
+  })
   .then((dati) => {
     console.log(dati);
     let nomeProdotto = document.querySelector(".name-product");
@@ -59,7 +65,7 @@ send.addEventListener("click", function (e) {
     .then((res) => res.json())
     .then((dati) => {
       console.log(dati);
-      location.href = "index.html";
+      Swal.fire("Prodotto Modificato!");
     });
 });
 
@@ -77,7 +83,10 @@ deleteBtn.addEventListener("click", function (e) {
   })
     .then((res) => res.json())
     .then((dati) => {
-      location.href = "index.html";
-      console.log("prodotto eliminato");
+      Swal.fire("SweetAlert2 is working!");
+    })
+    .catch((err) => {
+      console.log("err", err);
+      hideSpinner();
     });
 });
