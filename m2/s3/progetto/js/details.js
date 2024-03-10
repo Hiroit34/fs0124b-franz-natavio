@@ -26,7 +26,15 @@ getItem(id)
     description.innerText = dati.description;
     immagine.src = dati.imageUrl;
   })
-  .catch(console.error)
+  .catch((err) => {
+    console.log("err", err);
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="#">Why do I have this issue?</a>',
+    });
+  })
   .finally(() => {
     document.querySelector(".container-loading").classList.add("d-none");
     document.querySelector(".container-loading").classList.remove("d-block");

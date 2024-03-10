@@ -12,7 +12,7 @@ function generaNPlaceholders(n) {
     element.append(generateItemFromTemplateId("template-placeholder"));
   }
 }
-generaNPlaceholders(8);
+generaNPlaceholders(16);
 
 getItems()
   .then((res) => {
@@ -48,7 +48,15 @@ getItems()
       document.querySelector(".row").append(card);
     }
   })
-  .catch(console.error)
+  .catch((err) => {
+    console.log("err", err);
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="#">Why do I have this issue?</a>',
+    });
+  })
   .finally(() => {
     document
       .querySelectorAll(".col-placeholder")

@@ -67,6 +67,15 @@ send.addEventListener("click", function (e) {
           Swal.fire("Changes are not saved", "", "info");
         }
       });
+    })
+    .catch((err) => {
+      console.log("err", err);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#">Why do I have this issue?</a>',
+      });
     });
 });
 
@@ -89,7 +98,7 @@ deleteBtn.addEventListener("click", function (e) {
       });
       Toast.fire({
         icon: "success",
-        title: "Signed in successfully",
+        title: "Prodotto eliminato con successo",
       }).then(() => {
         location.href = "index.html";
       });
