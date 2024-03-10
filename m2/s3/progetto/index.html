@@ -12,59 +12,133 @@
 
 <body>
 
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand mb-0 h1" href="./index.html">BestTech</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./backoffice.html">BackOffice</a>
+                        <a class="nav-link backoffice" href="./backoffice.html" aria-disabled="true">BackOffice</a>
                     </li>
                 </ul>
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Informazioni</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Questo Login è fittizzio, non serve registrarsi e serve solo a sbloccare il backoffice.
+                                Clicca su prosegui. Inserisci un'username, password casuale e clicca su Login
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Prosegui</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Username"
+                                        aria-label="Username">
+                                    <input type="password" class="form-control" placeholder="Inserisci Password"
+                                        aria-label="Username">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary login" data-bs-dismiss="modal"
+                                    required>Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary login2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                    required>Login</button>
+                <button class="signout btn btn-primary ms-3 d-none">Sign Out</button>
             </div>
         </div>
     </nav>
     <div class="container">
-        <div class="h1">
+        <h1 class="my-4 pb-3 border-bottom">
             Prodotti
+        </h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-2 row-cols-lg-4 row-gap-4">
         </div>
-        <div class="row row-cols-4">
 
-        </div>
-    </div>
 
-    <template id="template">
 
-        <div class="card">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title nome">Card title</h5>
-                <h6 class="card-title brand">Card title</h6>
-                <p class="card-text"></p>
-                <p class="card-text price"></p>
-                <a href="#" class="btn btn-primary modifica">Modifica</a>
-                <a href="#" class="btn btn-success">Scopri di piu</a>
+
+
+
+        <template id="template-placeholder">
+            <div class="col col-placeholder">
+                <div class="card" aria-hidden="true">
+                    <div class="placeholder image" style='height: 270px'>
+                        <img src="" class="card-image-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </template>
+        </template>
 
 
+        <template id="template">
+            <div class="col">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title nome">Card title</h5>
+                        <h6 class="card-title brand">Card title</h6>
+                        <p class="card-text description"></p>
+                        <p class="card-text price"></p>
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="#" class="btn btn-primary modifica">Modifica</a>
+                            <a href="#" class="btn btn-warning">Scopri di piu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
 
-    <script src="./js/index.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+
+
+        <script type="module" src="./js/index.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 </body>
 
 </html>

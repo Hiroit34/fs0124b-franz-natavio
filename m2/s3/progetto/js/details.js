@@ -1,14 +1,11 @@
-const send = document.querySelector(".send-form");
+import { getItem } from "./api/api.js";
 
-let url = new URLSearchParams(location.search);
-let id = url.get("id");
+const url = new URLSearchParams(location.search);
+const id = url.get("id");
 
-fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
-  headers: {
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
-  },
-})
+document.querySelector(".container-loading").classList.add("d-block");
+
+getItem(id)
   .then((res) => {
     if (res.ok) {
       return res.json();
@@ -17,29 +14,20 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
     }
   })
   .then((dati) => {
-    console.log(dati);
-    let card = generaClone();
+    const nomeProdotto = document.querySelector("#name");
+    const brand = document.querySelector("#brand");
+    const price = document.querySelector("#price");
+    const description = document.querySelector("#description");
+    const immagine = document.querySelector("#imageUrl");
 
-    let nomeProdotto = card.querySelector(".nome");
-    let brand = card.querySelector(".brand");
-    let price = card.querySelector(".price");
-    let description = card.querySelector(".card-text");
-    let immagine = card.querySelector(".card-img-top");
-    let editBtn = card.querySelector(".modifica");
-    console.log(dati);
     nomeProdotto.innerText = dati.name;
     brand.innerText = dati.brand;
-    price.innerText = dati.price;
+    price.innerText = `Prezzo: ${dati.price.toFixed(2)} $`;
     description.innerText = dati.description;
     immagine.src = dati.imageUrl;
-
-    document.querySelector(".row").append(card);
+  })
+  .catch(console.error)
+  .finally(() => {
+    document.querySelector(".container-loading").classList.add("d-none");
+    document.querySelector(".container-loading").classList.remove("d-block");
   });
-
-function generaClone() {
-  //crea un clone del template e inseriscilo nella row
-  let template = document.querySelector("#template");
-  let clone = template.content.cloneNode(true);
-
-  return clone;
-}

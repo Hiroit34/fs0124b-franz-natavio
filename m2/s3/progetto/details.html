@@ -36,29 +36,40 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-
+    <div class="container container-item">
+        <div class="row mt-5">
+            <div class="col-auto">
+                <img id="imageUrl" src="" alt="">
+            </div>
+            <div class="col">
+                <h1 id="name" class="placeholder-glow"></h1>
+                <h4 id="brand"></h4>
+                <div id="description"></div>
+                <span id="price" class="badge rounded-pill text-bg-primary"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container container-loading">
+        <div class="row mt-5 ">
+            <div class="col-auto placeholder-glow">
+                <img id="imageUrl" class="placeholder" src="" alt="">
+            </div>
+            <div class="col placeholder-glow">
+                <h1 id="name" class="placeholder col-6"></h1>
+                <br />
+                <h4 id="brand" class="placeholder col-3"></h4>
+                <br />
+                <div id="description" class="placeholder col-4"></div>
+                <br />
+                <div id="description" class="placeholder col-4"></div>
+                <br />
+                <div id="description" class="placeholder col-3"></div>
+                <span id="price" class="badge rounded-pill text-bg-primary"></span>
+            </div>
         </div>
     </div>
 
-
-    <template id="template">
-
-        <div class="card">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title nome">Card title</h5>
-                <h6 class="card-title brand">Card title</h6>
-                <p class="card-text"></p>
-                <p class="card-text price"></p>
-            </div>
-        </div>
-
-    </template>
-
-
-    <script src="./js/details.js"></script>
+    <script type="module" src="./js/details.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

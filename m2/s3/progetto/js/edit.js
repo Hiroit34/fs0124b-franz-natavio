@@ -1,17 +1,11 @@
+import { deleteItem, getItem, updateItem } from "./api/api.js";
+
 const send = document.querySelector(".send-form");
 
 let url = new URLSearchParams(location.search);
 let id = url.get("id");
 
-console.log(id);
-
-//step 2: recupero i dati di questa pizza e li uso per popolare il form
-fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
-  headers: {
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
-  },
-})
+getItem(id)
   .then((res) => {
     if (res.ok) {
       return res.json();
@@ -34,7 +28,8 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
     descrizione.value = dati.description;
 
     console.log(nomeProdotto.value);
-  });
+  })
+  .catch(console.error);
 
 send.addEventListener("click", function (e) {
   e.preventDefault();
@@ -53,40 +48,59 @@ send.addEventListener("click", function (e) {
     description,
   };
 
-  fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
-    method: "PUT",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(prodotto),
-  })
+  updateItem(id, prodotto)
     .then((res) => res.json())
     .then((dati) => {
       console.log(dati);
-      Swal.fire("Prodotto Modificato!");
+      Swal.fire({
+        title: "Do you want to save the changes?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Save",
+        denyButtonText: `Don't save`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire("Saved!", "", "success").then(() => {
+            location.href = "index.html";
+          });
+        } else if (result.isDenied) {
+          Swal.fire("Changes are not saved", "", "info");
+        }
+      });
     });
 });
 
 let deleteBtn = document.querySelector(".btn-danger");
-console.log(deleteBtn);
 deleteBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
-    method: "DELETE",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
-      "Content-Type": "application/json",
-    },
-  })
+  deleteItem(id)
     .then((res) => res.json())
-    .then((dati) => {
-      Swal.fire("SweetAlert2 is working!");
+    .then(() => {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed in successfully",
+      }).then(() => {
+        location.href = "index.html";
+      });
     })
     .catch((err) => {
       console.log("err", err);
-      hideSpinner();
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#">Why do I have this issue?</a>',
+      });
     });
 });

@@ -1,3 +1,5 @@
+import { createItem } from "./api/api.js";
+
 const send = document.getElementById("send-form");
 
 send.addEventListener("click", function (e) {
@@ -17,17 +19,9 @@ send.addEventListener("click", function (e) {
     price,
   };
 
-  fetch("https://striveschool-api.herokuapp.com/api/product/", {
-    method: "POST",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5ZTJkN2IxMTAwMTkwZTZkZTAiLCJpYXQiOjE3MDk4ODk2OTQsImV4cCI6MTcxMTA5OTI5NH0.XBkhfEkZ10-s2tY5G78k0e441coEG4KEXrbjXpiT_xs",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(newProduct),
-  })
+  createItem(newProduct)
     .then((res) => res.json())
-    .then((dati) => {
+    .then(() => {
       location.href = "index.html";
     });
 });
