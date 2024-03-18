@@ -17,7 +17,7 @@ class User {
             console.log(`Credito residuo: ${this.credito}`);
         }
         this.credito -= minuti * 0.20;
-        this.nChiamate += 1;
+        this.nChiamate += minuti;
     }
     azzeraChiamte() {
         return this.nChiamate = 0;
@@ -27,6 +27,9 @@ let a = new User("Franz", "Natavio");
 console.log(a.nome);
 console.log(a.cognome);
 console.log(a.ricarica(5));
+console.log(a.chiamata(3));
+console.log(a.chiamata(3));
+console.log(a.chiamata(3));
 console.log(a.chiamata(3));
 console.log(a.nChiamate);
 console.log(a.credito);
