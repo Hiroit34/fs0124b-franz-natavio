@@ -26,12 +26,6 @@ class User implements Smartphone {
         this.credito -= minuti * 0.20
         this.nChiamate += 1
     }
-    chiama404() {
-        return this.credito
-    }
-    getNumberChiamata() {
-        return this.nChiamate += 1
-    }
     azzeraChiamte():number {
         return this.nChiamate = 0
     }
@@ -41,5 +35,6 @@ let a = new User("Franz", "Natavio");
 console.log(a.nome);
 console.log(a.cognome);
 console.log(a.ricarica(5));
-console.log(a.chiamata(40))
+console.log(a.chiamata(3))
+console.log(a.nChiamate)
 console.log(a.credito)
