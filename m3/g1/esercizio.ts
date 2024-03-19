@@ -21,7 +21,7 @@ class User implements Smartphone {
         if ((this.credito - minuti * 0.20) < 0) {
             console.log (`non puoi effettuare chiamate. Credito residuo:${this.credito}`)
         } else {
-            console.log(`Credito residuo: ${this.credito}`)
+            console.log (`Credito residuo: ${this.credito}`)
         }
         this.credito -= minuti * 0.20
         this.nChiamate += minuti
@@ -34,10 +34,16 @@ class User implements Smartphone {
 let a = new User("Franz", "Natavio");
 console.log(a.nome);
 console.log(a.cognome);
-console.log(a.ricarica(5));
-console.log(a.chiamata(3))
-console.log(a.chiamata(3))
-console.log(a.chiamata(3))
-console.log(a.chiamata(3))
+a.ricarica(5)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
+a.chiamata(3)
 console.log(a.nChiamate)
 console.log(a.credito)
