@@ -15,7 +15,7 @@ export class AppComponent {
     .then(posts => posts.json())
     .then((post) => {
       this.postArr = post.posts
-      this.generaRandomArray()
+      this.randomArray()
   })
   }
 
@@ -24,7 +24,7 @@ export class AppComponent {
     return randomNumber
   }
 
-  generaRandomArray() {
+  randomArray() {
     for (let i = 0; i < 4; i++) {
 
       this.postRandom.push(this.postArr[this.randomIndex()])
