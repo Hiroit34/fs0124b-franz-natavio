@@ -1,17 +1,20 @@
 <div class="container">
-  <div class="row">
+  <h1>Ford Motors</h1>
+  <div class="row justify-content-center">
     <div class="col-4" *ngFor="let auto of autoArrays">
       <div class="p-2 mt-3">
         <div class="card">
           <img [src]="auto.modelImage" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{auto.brand}}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam unde ducimus
+              reiciendis, sint officiis nisi amet cumque itaque? Deserunt sunt nihil aperiam eligendi exercitationem
+              quia
+              corrupti mollitia fugit rem.
             </p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Prezzo: {{auto.price}}</li>
+            <li class="list-group-item">Prezzo: {{auto.price | currency: 'EUR'}}</li>
             <li class="list-group-item">Modello: {{auto.model}}</li>
             <li class="list-group-item">Anno: {{auto.year}}</li>
             <li class="list-group-item" [ngClass]="{'bg-success': auto.available, 'bg-danger': !auto.available}"

@@ -4,7 +4,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://cdn-img.automoto.it/images/21857825/3000x/fiat-500l.jpeg",
         "year": 2015,
         "price": 7500,
         "available": false
@@ -14,7 +14,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://cdn.motor1.com/images/mgl/0w8bz/s3/copertina-fiat-500-col-super-tuning-tedesco-arriva-a-404-cv.jpg",
         "year": 2010,
         "price": 3500,
         "available": true
@@ -24,7 +24,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "https://cdn.wheel-size.com/automobile/body/ford-taurus-2008-2009-1672847297.95694.jpg",
         "year": 2009,
         "price": 5200,
         "available": false
@@ -34,7 +34,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "modelImage": "https://www.motortrend.com/uploads/sites/10/2015/11/2014-ford-focus-se-sedan-angular-front.png",
         "year": 2014,
         "price": 9700,
         "available": true
@@ -44,7 +44,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://www.motorionline.com/wp-content/uploads/2012/08/A3-Sportback-2013-rendering.jpg",
         "year": 2012,
         "price": 4300,
         "available": true
@@ -54,7 +54,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://file.kelleybluebookimages.com/kbb/base/evox/ExtSpP/14299/2020-Audi-Q7-360SpinFrame_14299_032_2400x1800_nologo.png",
         "year": 2020,
         "price": 41700,
         "available": false
