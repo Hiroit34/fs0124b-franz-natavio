@@ -1,5 +1,21 @@
 <div class="container">
-  <h1>Le Nostre Offerte!</h1>
+  <div class="text-center mt-4 border-bottom border-black p-3">
+    <h2>I Nostri Partner!</h2>
+  </div>
+  <div class="d-flex justify-content-between mt-5">
+    <div class="fiat me-3">
+      <img class="w-100" src="../../../assets/2048px-Logo_della_Fiat.svg.png" alt="">
+    </div>
+    <div class="audi me-3 d-flex align-items-center">
+      <img class="w-100" src="../../../assets/Audi_logo_detail.svg.png" alt="">
+    </div>
+    <div class="ford me-3 d-flex align-items-center">
+      <img class="w-100" src="../../../assets/Ford_Motor_Company_Logo.svg.png" alt="">
+    </div>
+  </div>
+
+
+  <h1 class="mt-5 p-3 border-top border-black">Le Nostre Offerte!</h1>
   <div class="row justify-content-center mt-5">
     <div class="col-4" *ngFor="let auto of randomAutoArrays">
       <div class="card">
@@ -20,7 +36,7 @@
             A third item
           </li>
         </ul>
-        <div class="card-body">
+        <div class="card-body text-end">
           <a [routerLink]="['/auto',auto.id]" class="card-link">Specifiche tecniche</a>
         </div>
       </div>
