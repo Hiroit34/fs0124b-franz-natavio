@@ -17,7 +17,7 @@ const routes: Routes = [
     component: FiatComponent
   },
   {
-    path:'ford',
+    path:'for',
     component: FordComponent
   },
   {
