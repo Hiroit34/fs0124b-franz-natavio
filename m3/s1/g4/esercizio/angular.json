@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eserciziog4": {
+    "esercizio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/eserciziog4",
+            "outputPath": "dist/esercizio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "eserciziog4:build:production"
+              "buildTarget": "esercizio:build:production"
             },
             "development": {
-              "buildTarget": "eserciziog4:build:development"
+              "buildTarget": "esercizio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "eserciziog4:build"
+            "buildTarget": "esercizio:build"
           }
         },
         "test": {
@@ -107,6 +107,6 @@
     }
   },
   "cli": {
-    "analytics": "26f5ada4-f3a3-4689-bde8-10e62f34b3e6"
+    "analytics": "dff3da4b-580d-4989-9ae7-9aa0d1c5b6af"
   }
 }
