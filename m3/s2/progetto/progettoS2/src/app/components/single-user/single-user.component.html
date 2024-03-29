@@ -8,7 +8,7 @@
         <h5 class="card-title">{{user.firstName}}</h5>
 
         <p class="card-text">{{ user.title }}</p>
-        <app-single-task *ngFor="let task of tasks"></app-single-task>
+        <app-single-task *ngFor="let task of user.task" [task]="task"></app-single-task>
       </div>
     </div>
   </div>

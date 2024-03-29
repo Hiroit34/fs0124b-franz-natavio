@@ -921,12 +921,11 @@ export class TaskService {
     return this.task.filter(t => !t.completed)
   }
 
-  toggleCompletion(id: number) {
-    const found = this.task.find(t => t.id === id)
-    if (found) {
-      //se .find non trova nulla ritornera' undefined, altrimenti un oggetto di tipo Todo
-      found.completed = !found.completed
-    } else alert("404 :(")
+  toggle(id: number) {
+    const taskFound = this.task.find(t => t.id === id)
+    if (taskFound) {
+      taskFound.completed = !taskFound.completed
+    }
   }
 
 

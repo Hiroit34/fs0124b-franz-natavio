@@ -1,3 +1,5 @@
+import { iTask } from "./task"
+
 export interface iUser {
   id: number
   firstName: string
@@ -5,4 +7,5 @@ export interface iUser {
   email: string
   image: string
   title: string
+  task?: iTask[]
 }
