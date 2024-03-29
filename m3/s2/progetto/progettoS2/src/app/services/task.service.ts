@@ -923,9 +923,8 @@ export class TaskService {
 
   toggle(id: number) {
     const taskFound = this.task.find(t => t.id === id)
-    if (taskFound) {
-      taskFound.completed = !taskFound.completed
-    }
+    
+    taskFound ? taskFound.completed = !taskFound.completed : console.error()
   }
 
 }

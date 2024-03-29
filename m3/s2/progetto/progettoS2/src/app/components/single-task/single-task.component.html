@@ -1,6 +1,6 @@
-<div class="form-check form-switch"
+<div class="form-check form-switch mt-3 py-3 "
   [ngClass]="{'bg-success-subtle': task.completed, 'bg-danger-subtle': !task.completed}">
-  <input (change)="onChangeTask(task.id)" class="form-check-input" type="checkbox" role="switch"
+  <input (change)="onChangeTask(task.id)" class="form-check-input ms-1 me-2" type="checkbox" role="switch"
     id="flexSwitchCheckChecked" [checked]=task.completed>
   <label class="form-check-label" for="flexSwitchCheckChecked">{{task.todo}}</label>
   <br>
