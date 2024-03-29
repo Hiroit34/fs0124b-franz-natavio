@@ -5,5 +5,4 @@ export interface iTask {
   todo: string
   completed: boolean
   userId: number
-  user?: iUser
 }

@@ -7,5 +7,4 @@ export interface iUser {
   email: string
   image: string
   title: string
-  task?: iTask[]
 }

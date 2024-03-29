@@ -13,7 +13,7 @@ export class SingleTaskComponent {
 
   @Input() task!:iTask
 
-  user!: iUser
+  user!: iUser[]
 
   constructor(private taskSvc: TaskService, private userSvc:UserService){}
 
