@@ -6,9 +6,8 @@ import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
-    canActivate: [GuestGuard],
-    canActivateChild: [GuestGuard],
+    loadChildren: () =>
+      import('./pages/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'auth',
@@ -31,6 +30,20 @@ const routes: Routes = [
       ),
     canActivate: [AuthGuard],
     canActivateChild: [AuthGuard],
+  },
+  {
+    path: 'all-films',
+    loadChildren: () =>
+      import('./pages/all-films/all-films.module').then(
+        (m) => m.AllFilmsModule
+      ),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+  },
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./pages/user/user.module').then((m) => m.UserModule),
   },
 ];
 
