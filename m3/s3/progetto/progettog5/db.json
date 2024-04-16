@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "email": "mariorossi@email.it",
+      "password": "$2a$10$X81jE4D.3D2BXhUhRUdrZOEBDh/UPtiXm.QI0snexcyyqas37.58K",
+      "name": "Mario",
+      "id": 1
+    },
+    {
+      "email": "pallino@email.it",
+      "password": "$2a$10$41Q0x8Jv5eLls.zZmk75fuEiuMPEGFmBdurj4hXoPIqTjxVinERA6",
+      "name": "Pinco",
+      "id": 2
+    },
+    {
+      "email": "wario@email.it",
+      "password": "$2a$10$X1Wcd8fWA9h97GVv1iL94ufqYGDKkQciB8pzzTHL9iH0P5gymMUZy",
+      "name": "Wario",
+      "id": 3
+    },
+    {
+      "email": "luigi@email.it",
+      "password": "$2a$10$PTbPPFaRtB6g0UeEvt5tkecJgFTJIhZgoipDGs9ZEJCWicUNjivSK",
+      "name": "Luigi",
+      "id": 4
+    },
+    {
+      "email": "franz@email.it",
+      "password": "$2a$10$V2VkSN1/K./3Vn66/1qXpuPga/KYrUjUkyJX2HzNJn37YzbKSHwRy",
+      "name": "Franz",
+      "id": 5
+    },
+    {
+      "email": "luca@email.it",
+      "password": "$2a$10$yA0Qphj87tzapOcRvA/nAuqvccXTxcOwAFnzIih6447dhPcDOa4IG",
+      "name": "Luca",
+      "id": 6
+    },
+    {
+      "email": "callum@email.it",
+      "password": "$2a$10$3zGU0Fjp476c2LmCSwuYJ.mgoddqS7klEeYk27bAMvxwFFng0I5Em",
+      "name": "Callum",
+      "id": 7
+    },
+    {
+      "email": "callum2@email.it",
+      "password": "$2a$10$y2TrDCeWtrqfE/9C4yzBne7kqu9O/Eo9lX2L1wxVCWQN7R2ijoc.m",
+      "name": "Callum",
+      "id": 8
+    },
+    {
+      "email": "asd@email.it",
+      "password": "$2a$10$w0E/T/VWWkCpG5.A5ANPreo3R.tJWHSCCOLsFeE.Y97HXVU.tgLOW",
+      "name": "asdasd",
+      "id": 9
+    },
+    {
+      "email": "rosa@email.it",
+      "password": "$2a$10$la3WrfpQKhc7a5wFFRGjme7uNkLghKO8nQsTIJSLr8i0fcrEziL/y",
+      "name": "Rosa",
+      "id": 10
+    },
+    {
+      "email": "valentinuzzi@email.it",
+      "password": "$2a$10$S9.UVL4I94E.Ijtle/hZfODHdfnnsGqVCr.4H8a/pOQE1ecxPFbh2",
+      "name": "Valentinuzzi",
+      "id": 11
+    },
+    {
+      "email": "ciao@email.it",
+      "password": "$2a$10$brixzE5yOCrFIQ7jSOE2b.tD13Y8gGRRoe2dwkPMe5QnNAoKI7ID2",
+      "name": "ciao",
+      "id": 12
+    },
+    {
+      "email": "sara@email.it",
+      "password": "$2a$10$n6EIrAe4oVdMmDnNLDkfLedW0WH6Xk/XSvkKwfxVbCpSnoXI348l6",
+      "name": "Sara",
+      "id": 13
+    }
+  ],
+  "movies": [
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/dbb9aff6fc5fcd726e2c19c07f165d40aa7716d1dee8974aae8a0dad9128d392.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/2d0c9e38968936e6711c7fb2bc7895b82d8bb9178b5a854e14dffa4b17b88487.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "image": "https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "image": "https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": [
+        "Drama"
+      ],
+      "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "image": "https://www.filmalcinema.com/wp-content/uploads/2017/03/poster-85-360x618.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p28828_p_v10_am.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "image": "https://pad.mymovies.it/filmclub/2002/08/056/locandina.jpg"
+    },
+    {
+      "id": 11,
+      "title": "The Godfather: Part II",
+      "year": 1974,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+      "image": "https://mr.comingsoon.it/imgdb/locandine/big/16187.jpg"
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDgwY2YyNjctZTMxZC00ZTRlLThhN2QtMTAwYjUyODcyZDYxXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 13,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": [
+        "Drama"
+      ],
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "plot": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+      "image": "https://pad.mymovies.it/filmclub/2007/02/131/locandina.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "image": "https://pad.mymovies.it/filmclub/2003/01/012/locandina.jpg"
+    },
+    {
+      "id": 16,
+      "title": "The Green Mile",
+      "year": 1999,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Fantasy"
+      ],
+      "plot": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "image": "https://pad.mymovies.it/filmclub/2006/04/439/locandina.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Goodfellas",
+      "year": 1990,
+      "genre": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "image": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+    },
+    {
+      "id": 18,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "plot": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+    },
+    {
+      "id": 19,
+      "title": "The Prestige",
+      "year": 2006,
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "plot": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Se7en",
+      "year": 1995,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "plot": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+    }
+  ]
+}

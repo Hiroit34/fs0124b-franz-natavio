@@ -1,0 +1,14 @@
+.card {
+  width: 18rem;
+  height: 36rem;
+  margin-top: 3rem;
+  .card-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 3rem;
+  }
+  .card-img-top {
+    max-height: 381px ;
+  }
+}

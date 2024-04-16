@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col" *ngFor="let film of allFilms">
+
+    <div class="card">
+      <img class="card-img-top" [src]="film.image" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{film.title}}</h5>
+        <p class="card-text">{{film.plot}}</p>
+        <a class="btn btn-primary me-2">Scopri di piu</a>
+        <a (click)="delete(film.id)" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
