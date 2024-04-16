@@ -1,8 +1,0 @@
-<div class="form-check form-switch"
-  [ngClass]="{'bg-success-subtle': task.completed, 'bg-danger-subtle': !task.completed}">
-  <input [(ngModel)]="task.completed" class="form-check-input" ngClass="" type="checkbox" role="switch"
-    id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">{{task.todo}}</label>
-  <br>
-  <small *ngIf="user">Assigned to: {{user.firstName}} {{user.lastName}}</small>
-</div>
