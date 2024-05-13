@@ -30,7 +30,7 @@ public class EsApplication {
 			//Mostro in console le pizze
 			System.out.println(margherita);
 			System.out.println(tonnoCipolla);
-			System.out.println(wrustelPatatine);
+//			System.out.println(wrustelPatatine);
 		}
 	}
 
